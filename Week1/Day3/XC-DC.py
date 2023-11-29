@@ -43,6 +43,7 @@ for key, value in items_purchase.items():
     #making a result list
     if value1 <= wallet1:
         mylist.append(key)
+        wallet1 = wallet1 - value1
 mylist.sort()
 if mylist == []:
     print("Nothing")
