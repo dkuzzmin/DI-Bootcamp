@@ -30,5 +30,3 @@ sara_pets = Pets(all_cats)
 sara_pets.walk()
 
 
-# if __name__ == "__main__":
-#     dog1 = Dog("Rex", 4, 23)
