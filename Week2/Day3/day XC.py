@@ -12,4 +12,7 @@ def some_sum(some_list):
     else:
         print(result)
 
+
+
+
 some_sum(my_list)
