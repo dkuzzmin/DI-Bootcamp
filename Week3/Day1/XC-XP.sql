@@ -41,7 +41,7 @@ SELECT * FROM customers WHERE surname in ('Smith');
 SELECT * FROM customers WHERE surname in ('Jones');
 
 -- All customers whose firstname is not ‘Scott’.
-SELECT * FROM customers WHERE firstname in ('Scott');
+SELECT * FROM customers WHERE firstname not in ('Scott');
 
 
 
