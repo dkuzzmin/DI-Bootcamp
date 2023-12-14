@@ -141,9 +141,13 @@ ON rental.inventory_id = inventory.inventory_id
 INNER JOIN customer
 ON customer.customer_id = rental.customer_id
 INNER JOIN payment
-ON payment.customer_id = customer.customer_id
+ON payment.rental_id = rental.rental_id
 WHERE customer.first_name = 'Matthew' AND customer.last_name = 'Mahan' AND payment.amount > 4 
 	AND (rental.return_date BETWEEN '2005-07-28' AND '2005-08-01')
+
+
+
+
 
 
 --4. The 4th film : His friend Matthew Mahan watched this film, as well. It had the word “boat” 
