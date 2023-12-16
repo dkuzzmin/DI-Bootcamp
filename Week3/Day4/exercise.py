@@ -62,9 +62,9 @@ while s_in != 5:
         
         cur.execute('SELECT COUNT(*) FROM users')
         index_in = cur.fetchall()
-        index_in = index_in[0][0]
+        index_in = index_in[0][0]+1
         print(index_in)
-        # cur.execute('INSERT INTO users (name, price) VALUES (%s, %s)', ('iKey', 750))
+        cur.execute('INSERT INTO users VALUES (%s, %s)', ('iKey', 750))
 
 
 
