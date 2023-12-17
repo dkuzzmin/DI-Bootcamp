@@ -33,8 +33,10 @@ print(s[1][::-1])
 
 # 3. Write code for a list that contains four names and prints every other name.
 s = ["Bill", "Andy", "Jimmy", "Antony"]
-for i in range(4):
-    print(s[i])
+print(s[0])
+print(s[1])
+print(s[2])
+print(s[3])
 
 # 4. Write code for a list of numbers. Ask a user for a new number and insert it into the list,
 # second from the end.
@@ -70,12 +72,40 @@ if (age > 65 and gender.upper() == "MALE") or (age > 60 and gender.upper() == "F
 
 # Loops
 # 8. Exercise: Write a loop to print every number between 10 and 20.
+for i in range(10,21):
+    print (i)
+
 # 9. Exercise: Write a loop to print every odd number between 1 and 20.
+i = 1
+while i <= 20:
+    print (i)
+    i += 2
+
 # 10. Exercise: Write code with a list of five names. Print the names one by one using a loop.
+s = ["Bill", "Andy", "Jimmy", "Antony"]
+for i in range(4):
+    print(s[i])
+
 # 11. Exercise: Write a loop that takes numbers from the user until it receives the number 0
 # and prints the sum of the numbers received.
+n = 1
+sum = 0
+while n != 0:
+    n = int(input("Write a number: "))
+    sum +=n
+print(sum)
+
 # 12. Exercise: Write a loop that takes words from the user until it receives the word 'done' and
 # prints the longest word received.
+s = ""
+smax = ""
+while s != "done":
+    s = (input("Write a word: "))
+    if len(s) > len(smax):
+        smax = s
+print(smax)
+
+
 # Functions
 # 13. Exercise: Write a function that takes a string as input and prints its length:
 # 14. Exercise: Define a function that takes three numbers and prints their average.
