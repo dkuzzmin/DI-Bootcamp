@@ -108,9 +108,31 @@ print(smax)
 
 # Functions
 # 13. Exercise: Write a function that takes a string as input and prints its length:
+def stringlen(st):
+    i = 0
+    for x in st:
+        i +=1
+    print(i)
+
+stringlen("Dima")
+
 # 14. Exercise: Define a function that takes three numbers and prints their average.
+def average(n1,n2,n3):
+    print((n1+n2+n3)/3)
+
+average(34,36,87)
 # 15. Exercise: Define a function that takes two arguments, a string and a number and checks
 # if the string has more characters than the number. Example: 'string', 3 prints True since
 # string has 5 characters.
+def stringfunc(st, n):
+    if len(st) > n:
+        return True
+    else:
+        return False
+
 # 16. Exercise: Write a function that copies a string a certain number of times, based on the
 # input. Set the default amount of copies to be 1.
+def printstr(string, cop=1):
+    return string*cop
+        
+print(printstr("Error", 4))
