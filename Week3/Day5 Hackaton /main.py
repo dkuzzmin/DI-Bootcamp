@@ -1,16 +1,58 @@
 
-SQL table
+import psycopg2
+
+conn = psycopg2.connect(
+    dbname = 'qmcjdcgq',
+    user = 'qmcjdcgq',
+    password = '4nY4MXBPAtEpeLb7qo78BZno7hfF74kG',
+    host = 'flora.db.elephantsql.com',
+    port = '5432' 
+)
+
+# cur = conn.cursor()
+
+def view_all(conn):
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM posts_db")
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
+    cur.close()
 
 
-pattern word 
-
-class patternword (word, anitisem)
-    word = ''
-    antisem = True
-    posts_base
+view_all(conn)
 
 
-def  analyse text
+def input_db():
+#input new posts (in future - parsing)
+    
+
+    pass
+
+def update_patterns():
+# adding new pro and anri words/phrase
+# deleting new pro and anri words/phrase
+    
+    pass
+ 
+def analyser(post):
+    pass
+
+# def visual_result()
+
+
+# SQL table
+
+
+# pattern word 
+
+# class patternword (word, anitisem)
+#     word = ''
+#     antisem = True
+#     posts_base
+
+
+# def  analyse text
 
 
 
